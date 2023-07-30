@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Enigma do Eclipse das Almas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        .enigma {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        .input-box {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Enigma do Eclipse das Almas</h1>
+    <div class="enigma">
+        <p>Para descobrir o caminho que leva ao Eclipse das Almas,</p>
+        <p>Resolva este enigma e siga as pistas sem falhas.</p>
+        <p>Quando acertar o enigma, a próxima pista encontrará.</p>
+    </div>
+    <div class="input-box">
+        <p>Insira a resposta aqui:</p>
+        <input type="text" id="answer" />
+        <button onclick="checkAnswer()">Enviar</button>
+    </div>
+    <script>
+        function checkAnswer() {
+            let answer = document.getElementById("answer").value.toLowerCase();
+            if (answer === "lua cheia") {
+                window.location.href = "enigma2.html";
+            } else {
+                alert("Resposta incorreta. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
